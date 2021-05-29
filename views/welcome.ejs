@@ -1,0 +1,222 @@
+<nav id="mainNav" class="nav navbar navbar-expand-md navbar-dark py-0 fixed-top p_nav">
+    <a href="#" class="navbar-brand">
+        <!--img src="/stylesheets/images/main_logo.jpg" alt="Italian Trulli"-->
+        <h3 class="mb-0">Share4Care</h3>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" >
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+        </li>
+        <% if(!currentUser) { %>
+            <li class="nav-item">
+                <a href="/users/login" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="/users/register" class="nav-link">Register</a>
+            </li>
+        <% } else {%>
+            <li class="nav-item">
+                <a href="/donate" class="nav-link">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a href="/get" class="nav-link">Get</a>
+            </li>
+            <li class="nav-item">
+                <a href="/users/logout" class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a href="/profile" class="nav-link"><%=currentUser.name%></a>
+            </li>
+        <% } %>
+        </ul>
+    </div>
+</nav>
+
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+            <div id="header" class="container text-white text-center">
+              <h1 class="display-1 p_display">Share4Care</h3>
+                <div class="lead d-none d-md-block"></div>
+                <div class="container">
+                  <a id="book" class="btn btn-primary px-5" href="/dashboard" role="button">DASHBOARD</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-5">
+            <h1 class="dark-blue bold">Things to Donate</h1>
+            <div class="row things">
+            <div class="col-md-4 p-3">
+                <img src="/stylesheets/images/icons/books.png" alt="Books" title="Books" class="img-fluid d-none d-md-inline">
+                <h3>Books</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio cumque illum officia, quae possimus?</p>
+            </div>
+            <div class="col-md-4 p-3">
+                <img src="/stylesheets/images/icons/clothes.png" alt="Clothes" title="Clothes" class="img-fluid d-none d-md-inline">
+                <h3>Clothes</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio cumque illum officia, quae possimus?</p>
+            </div>
+            <div class="col-md-4 p-3">
+                <img src="/stylesheets/images/icons/stationary.png" alt="Stationary" title="Stationary" class="img-fluid d-none d-md-inline">
+                <h3>Stationary</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio cumque illum officia, quae possimus?</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-2 p-3">
+            <h1 class="dark-blue bold">Happy Moments</h1>
+            <div class="row m-2">
+            <div class="col-md-6 p-3">
+                <div class="card">
+                <img src="/stylesheets/images/1.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h2 class="card-title text-primary">HAPPY FACES</h2>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="" class="btn btn-lg btn-outline-primary">Click Here</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-3">
+                <div class="card">
+                    <img src="/stylesheets/images/2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                    <h2 class="card-title text-primary">HAPPY FACES</h2>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="" class="btn btn-lg btn-outline-primary">Click Here</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+                  
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+            <div class="col-lg-7 mb-3">
+                <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="/stylesheets/images/carousel/1.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/stylesheets/images/carousel/2.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/stylesheets/images/carousel/3.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/stylesheets/images/carousel/4.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/stylesheets/images/carousel/5.jpg" alt="" class="d-block w-100">
+                    </div>
+                </div>
+                <a href="#mainCarousel" class="carousel-control-prev" data-slide="prev" role="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#mainCarousel" class="carousel-control-next" data-slide="next" role="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <h3 class="bold blue">Day with them ...</h3>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#">Read More<i class="fa fa-arrow-right"></i></a>
+            </div>
+            </div>
+            </div>
+        </section>    
+                          
+        <section>
+            <div class="container text-center mt-5">
+                <h3 class="bold dark-blue">Memories</h3>
+                <h5 class="text-primary">#Share4Care</h5>
+                <div class="row mt-4">
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal7.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="/stylesheets/images/gal8.jpg" alt="" class="img-fluid">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quotes">
+            <div class="container text-center">
+                <h3 class="dark-blue bold">Blessings</h3>
+                <div class="row">
+                <div class="col-md-4 my-2 p_blessing">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <footer class="blockquote-footer">Payal Patel</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 my-2 p_blessing">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <footer class="blockquote-footer">Shreya Dalal</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4 my-2 p_blessing">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <blockquote class="blockquote">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <footer class="blockquote-footer">Ashna Asrani</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="container text-white text-center py-5 justify-content-center">
+                <p class="lead">JOIN US TO KNOW WHERE TO DONATE AND FROM WHERE TO GET HELP</p>
+                <div class="row justify-content-center">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                    <form action="" class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your Email" name="" id="">
+                            <div class="input-group-append">
+                            <button class="btn btn-primary">Join Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
